@@ -160,15 +160,15 @@ body{
 
 
     #rodape{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #93E5DB;
-    text-align: center;
-    height: 101px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #93E5DB;
+        text-align: center;
+        height: 101px;
 }
 
 #logo-bola{
