@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Não sei</title>
-    <link rel="stylesheet" href="semnome.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="TelaCadastroCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <div id="login-title">
             <div id="div-login-texto">
                 <img id="retangulo-login" src="imagens/Rectangle 17.png" alt="">
-                <p id="texto-login">Login</p>
+                <p id="texto-login">Cadastro</p>
             </div>
             <div>
                 <button id="botao"><img id="menu-icon" src="imagens/white-hamburger-menu-icon-24.jpg" alt="menu"></button>
@@ -25,32 +25,39 @@
 
 <section>
     <div id="caixa">
-        <div id="dentro">
-            <h2 id="Login">Login</h2>
+        <div>
+            <h2 id="Login">Cadastro</h2>
             <hr id="linha">
                     <div id="login-senha">
                         <div class="caixas-entrada">
-                            <label class="nome-caixa">E-MAIL:</label>
+                            <label class="nome-caixa">NOME:</label>
                             <input class="caixa-login" type="text" />
                         </div>
-
                         <div class="caixas-entrada">
-                            <label class="nome-caixa">SENHA:</label>
+                            <label class="nome-caixa">DATA DE NASCIMENTO:</label>
+                            <input id="caixa-data-nasc"  class="caixa-login" type="text"/> 
+                        </div>
+                        <div class="caixas-entrada">
+                            <label class="nome-caixa">E-MAIL:</label>
+                            <input class="caixa-login" type="email" />
+                        </div>
+                        <div class="caixas-entrada">
+                            <label class="nome-caixa">TELEFONE:</label>
+                            <input class="caixa-login" type="text" />
+                        </div>
+                        <div class="caixas-entrada">
+                            <label class="nome-caixa">CRIA A SENHA:</label>
                             <input  class="caixa-login" type="text"/> 
                         </div>
-
-                        <div>
-                            <button  id="botao-envia">Enviar</button>
-                        </div>
-
+                        
                     </div>
 
-                    <div id="links">
-                            <a class="link-baixo" id="texto-senha" href="">ESQUECEU A SENHA?</a>
-                        <div id="link-cadastra">
-                            <p id="texto-final">NÃO POSSUI CONTA?</p>
-                            <a class="link-baixo" href="">CADASTRE-SE!</a>
+                    <div id="link-cadastra">
+                        <div>
+                            <button  id="botao-envia">Cadastrar</button>
                         </div>
+                        <p id="texto-com-margin" class="texto-final">JÁ POSSUI CONTA?</p>
+                        <a class="texto-final" class="link-baixo" href="TelaLogin.html">LOGIN</a>
                     </div>
         </div>
     </div>
