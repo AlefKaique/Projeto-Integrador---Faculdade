@@ -343,6 +343,31 @@ article{
     margin-top: 10%;
 }
 
+#div-botao-segue{
+    width: 182px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#botao-comecar-agora{
+    font-family: Graduate;
+    background-color: #309387;
+    font-size: 14px;
+    width: 182px;
+    height: 42px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media (max-width: 1154px){
     #textss{
         display: flex;
@@ -359,6 +384,7 @@ article{
     #artigo-baixo{
         height: 100%;
     }
+
 }
 
 
