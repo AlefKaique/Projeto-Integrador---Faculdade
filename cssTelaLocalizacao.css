@@ -178,157 +178,59 @@ body{
     height: 59px;
 }
 
-.title-esporte{
-    font-family: Graduate;
-    color: #318B80;
-    font-size: 32px;
-    margin: 0;
-}
-
-.linha-esporte{
-    padding: 1px;
+.linhas{
     border: none;
     background-color: #41A79A;
+    padding: 1px;
+    margin-right: 29px;
     width: 480px;
-    margin: 0;
-    margin-top: 10px;
-    margin-left: 30px;
 }
 
-#div-organiza-textos{
-    width: 1110px;
-    height: 360px;
-    border-right: none;
-    background-color:#9DD4CE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#ajusta{
+#tudo{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-}
-
-#back-botao{
-    width: 15px;
-    height: 360px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
+    margin: 0 auto;
 }
 
-#back-botao-2{
-    width: 15px;
-    height: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-
-#organiza-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-textos{
+#textos{
+    text-align: left;
+    font-size: 21px;
+    color: #0F413A;
     font-family: Lustria;
-    color: #FFF;
-    font-size: 22px;
-    width: 514px;
-    height: 343px;
-    text-align: left;
-    margin-left: 30px;
+}
+
+#imagem-pin{
+    width: 30px;
+    height: 30px;
+}
+
+#div-pin{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#central-2{
-    display: none;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width: 1209px;
-    height: 569px;
-    opacity: 50%;
-}
-
-#central{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width: 1209px;
-    height: 569px;
-}
-
-#botao-seta{
-    background-color: #DDECEA;
-    border-radius: 50%;
-    width: 45px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-}
-
-#setinha-botao{
-    width: 25px;
-    height: 25px;
-}
-
-#botoes-esportes{
-    display: flex;
-}
-
-.botoes{
-    width: 480px;
-    height: 70px;
+    background-color: #9DD4CE;
+    width: 61px;
+    height: 58px;
     border-radius: 4px;
-    font-size: 24px;
-    margin: 10px;
-    margin-right: 20px;
-    text-decoration: none;
-}
-
-.div-botoes{
-    display: flex;
-    flex-direction: column;
-}
-
-#dentro-central-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-#div-title-esporte{
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
-    text-align: left;
-    align-items: left;
-    justify-content: left;
 }
 
-#linha-esporte-central-2{
-    padding: 1px;
-    border: none;
-    background-color: #41A79A;
-    width: 480px;
-    margin: 0;
-    margin-top: 10px;
+#div-textos{
+    width: 1153px;
+    height: 295px;
+}
+
+#texto-linha{
+    color: #318B80;
+    font-size: 22px;
+    text-align: center;
+    font-family: Graduate;
+}
+
+#ajusta-esp{
+    margin-bottom: 20px;
 }
 
 /* menus globais copia aqui*/
