@@ -13,7 +13,4 @@ function Mudarestado(el) {
         fundo.style.display = 'block';
         text_title.innerHTML = "Menu";
     }            
-
-    
-
 }
