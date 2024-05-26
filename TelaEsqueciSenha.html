@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Tackle Talk</title>
-    <link rel="stylesheet" href="cssTelaMenuEsportes.css">
+    <link rel="stylesheet" href="cssTelaEsqueciSenha.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <div id="login-title">
             <div id="div-login-texto">
                 <img id="retangulo-login" src="imagens/Rectangle 17.png" alt="">
-                <p id="texto-login">ESPORTES</p>
+                <p id="texto-login">REDEFINIÇÃO DE SENHA</p>
             </div>
             <div>
                 <button onclick="Mudarestado('menu')" id="botao"><img id="menu-icon" src="imagens/white-hamburger-menu-icon-24.png" alt="menu"></button>
@@ -43,7 +44,7 @@
                     </div>
                     <div id="configuracao">
                         <div id="botao-config">
-                            <a href="TelaConfig.html" class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/settings.png" alt=""></a>
+                            <a href="TelaConfig.html"  class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/settings.png" alt=""></a>
                             <p class="texto-icon-menus">Configurações</p>
                         </div>
                     </div>
@@ -65,53 +66,20 @@
         </div>
         </div>
     </div>
-    <div id="central-2">
-        <div id="dentro-central-2">
-            <div id="div-title-esporte">
-                <p class="title-esporte">ESPORTES</p>
-                <hr id="linha-esporte-central-2">
+    <div id="caixa">
+        <div id="ajusta-coluna">
+            <div id="essa-div-mesmo">
+                <p id="texto-dessa-div">Esqueci a senha</p>
+                <hr id="linha">
             </div>
-            <div>
-                <div id="botoes-esportes">
-                    <div class="div-botoes">
-                        <a class="botoes" href="">Baseball</a>
-                        <a class="botoes" href="">Curling</a>
-                        <a class="botoes" href="">Futebol Americano</a>
-                        <a class="botoes" href="">Golfe</a>
-                        <a class="botoes" href="">Hóquei no Gelo</a>
-                    </div>
-                    <div class="div-botoes">
-                        <a class="botoes" href="">Kabaddi</a>
-                        <a class="botoes" href="">Lacrosse</a>
-                        <a class="botoes" href="">Rugby</a>
-                        <a class="botoes" href="">Sepak Takraw</a>
-                        <a class="botoes" href="">Ultimate Frisbee</a>
-                    </div>
+            <div id="bora-ajusta-isso">
+                <div class="caixas-entrada">
+                    <label class="nome-caixa">E-MAIL:</label>
+                    <input class="caixa-login" type="text" />
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="central">
-        <div id="ajusta">
-            <div>
-                <p CLASS="title-esporte">Explorando Novos Horizontes:<br> Descubra os Esportes do Clube</p>
-                <hr class="linha-esporte">
-            </div>
-            <div id="organiza-flex">
-                <div id="div-organiza-textos">
-                    <div class="div-textos">
-                        <p>Bem-vindo ao mundo emocionante e diversificado dos esportes no Clube de Esportes! Aqui, convidamos você a embarcar em uma jornada de descoberta e aventura, explorando modalidades esportivas que vão além do convencional. Deixe-se levar pela curiosidade enquanto apresentamos uma seleção única de esportes menos praticados no Brasil, cada um com sua própria história fascinante e desafios empolgantes.</p>
-                    </div>
-                    <div class="div-textos">
-                        <p>Prepare-se para ser surpreendido ao mergulhar em esportes como o curling, onde precisão e estratégia se encontram em um cenário gelado, 
-                        ou experimente a adrenalina do lacrosse, um esporte dinâmico que combina habilidade e velocidade em igual medida. Para os mais aventureiros, 
-                        desvende os mistérios do kabaddi, um esporte de contato emocionante que desafia tanto a resistência física quanto mental, ou mergulhe na arte 
-                        acrobática do sepak takraw, onde os jogadores desafiam a gravidade com movimentos impressionantes.</p>
-                    </div>
-                </div>
-                <div id="back-botao">
-                    <button onclick="MudarEsportes('central-2')" id="botao-seta"><img id="setinha-botao" src="imagens/arrow.png" alt=""></button>
-                </div>
+            <div id="div-bt-voltar">
+                <a href="ClubeDeEsportes.html" id="bt-voltar"><img id="imagem-bt-voltar" src="imagens/Continuar.png"  alt=""><img src="imagens/icon-continua.png" id="imagem-bt-voltar-2" alt=""></a>
             </div>
         </div>
     </div>
@@ -125,7 +93,7 @@
     </div>
 </footer>
 
-<script  type="text/javascript" src="scriptMenuTelaEsporte.js"></script>
+<script  type="text/javascript" src="scriptTelaEsqueciSenha.js"></script>
 
 </body>
 </html>
