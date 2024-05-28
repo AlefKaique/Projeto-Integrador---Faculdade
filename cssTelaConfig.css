@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-image: url("imagens/background.png");
     font-family: Graduate;
+    
 }
 
 .background-image{
@@ -398,3 +399,4 @@ body{
     border-radius: 4px;
     margin-top: 20px;
 }
+

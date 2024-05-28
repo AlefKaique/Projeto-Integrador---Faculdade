@@ -1,0 +1,32 @@
+.protanopia-filter {
+    filter: 
+        /* Ajustar a matiz para um tom de marrom */
+        hue-rotate(173deg)
+        /* Reduzir a saturação */
+        saturate(0.1)
+        /* Ajustar a luminosidade para uma tonalidade mais escura */
+        brightness(0.9);
+}
+
+
+/* Filtro para Tritanopia */
+.tritanopia-filter {
+        filter: 
+            /* Ajustar a matiz para um tom de marrom */
+            hue-rotate(120deg)
+            /* Reduzir a saturação */
+            saturate(0.8)
+            /* Aumentar a luminosidade para uma tonalidade mais clara */
+            brightness(1.10);
+    }
+
+/* Filtro para Deuteranopia */
+.deuteranopia-filter {
+    filter: 
+        /* Ajustar a matiz para um tom de azul mais forte */
+        hue-rotate(20deg)
+        /* Reduzir a saturação */
+        saturate(0.8)
+        /* Aumentar a luminosidade para uma tonalidade mais clara */
+        brightness(1.05);
+}
