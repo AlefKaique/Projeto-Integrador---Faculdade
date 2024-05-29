@@ -15,6 +15,14 @@ body{
     color: #fff;
 }
 
+#formulario{
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #login-title{
     background-color: #93E5DB;
@@ -83,6 +91,7 @@ body{
         height: 739px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     #login-senha{

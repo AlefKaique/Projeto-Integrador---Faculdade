@@ -37,7 +37,7 @@
                 <p id="texto-2-div-sup" class="texto-sup-2">tipos de habilidades.</p>
             </div>
             <div id="div-botao-segue">
-                <a href="TelaLogin.html" id="botao-comecar-agora">Começar agora</a>
+                <a href="TelaLogin.php" id="botao-comecar-agora">Começar agora</a>
             </div>
         </div>
         <div id="div-hurts">

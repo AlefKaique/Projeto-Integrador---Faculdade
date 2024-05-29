@@ -81,6 +81,7 @@ body{
         height: 739px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     #login-senha{
