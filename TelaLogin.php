@@ -1,11 +1,50 @@
+<?php
+    include_once('config.php');
 
+    if(isset($_POST['email']) || isset($_POST['senha'])) {
+
+        if(strlen($_POST['email']) == 0){
+            echo "Preencha seu e-mail";
+        } else if(strlen($_POST['senha']) == 0){
+            echo "Preencha sua senha";
+        } else {
+
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+
+            //$sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+            $sql_code = mysqli_query ($conexao, "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'");
+
+            $quantidade = $sql_code->num_rows;
+
+            if($quantidade == 1){
+
+                $usuraio = $sql_code->fetch_assoc();
+
+                if(!isset($_SESSION)){
+                    session_start();
+                }
+
+                $_SESSION['id'] = $usuraio['id'];
+                $_SESSION['nome'] = $usuraio['nome'];
+
+                header("location: TelaSaibaMais.html");
+
+            }else{
+                echo "Falha ao logar! E-mail ou senha incorretos";
+            }
+
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Tackle Talk</title>
-    <link rel="stylesheet" href="TelaLoginCss.css">
     <link rel="stylesheet" href="cssMudaCor.css">
+    <link rel="stylesheet" href="TelaLoginCss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
@@ -27,47 +66,14 @@
 
 <section>
     <div id="menu">
-        <div id="container-menu">
-            <div id="div-ajuste">
-                <div id="container-menus">
-                    <div id="menuzinhos">
-                        <div class="menus-dos-menus">
-                            <a href="ClubeDeEsportes.php" class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/casinha.png" alt=""></a>
-                            <p class="texto-icon-menus">Início</p>
-                        </div>
-                        <div class="menus-dos-menus">
-                            <a href="TelaLogin.php" class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/user.png" alt=""></a>
-                            <p class="texto-icon-menus">Login</p>
-                        </div>
-                        <div class="menus-dos-menus">
-                            <a href="TelaFaleConosco.html" class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/question.png" alt=""></a>
-                            <p class="texto-icon-menus">Contato</p>
-                        </div>
-                    </div>
-                    <div id="configuracao">
-                        <div id="botao-config">
-                            <a href="TelaConfig.html"  class="botoes-menu"><img class="imagem-botoes-menu" src="imagens/settings.png" alt=""></a>
-                            <p class="texto-icon-menus">Configurações</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <hr class="linhas-menus">
-                    <p id="text-menu">MENU</p>
-                    <hr class="linhas-menus">
-                </div>
-                <div id="links">
-                    <a href="TelaSaibaMais.html" class="botoes">Quer saber mais? clique aqui</a>
-                    <p class="textos-para-menus">Esportes</p>
-                    <a href="TelaMenuEsportes.html" class="botoes">Veja aqui a nossa lista</a>
-                    <p class="textos-para-menus">Eventos</p>
-                    <a href="TelaEventos.html" class="botoes">Agenda de Eventos</a>
-                    <p class="textos-para-menus">Onde estamos?</p>
-                    <a href="TelaLocalizacao.html" class="botoes">Localização do clube</a>
-                </div>
+        <div id = "container-menu">
+            <div id="botao-config">
+                <a href="TelaConfig.html"  class="botoes-menu"><img src="imagens/settings.png" alt=""></a>
+                <p class="texto-icon-menus">Configurações</p>
+            </div>
         </div>
-        </div>
-    </div>      
+    </div>  
+
     <div id="caixa">
     <form action="TelaLogin.php" method="POST">
         <div id="dentro">
@@ -76,7 +82,7 @@
                     <div id="login-senha">
                         <div class="caixas-entrada">
                             <label class="nome-caixa">E-MAIL:</label>
-                            <input name = "email" class="caixa-login" type="text" />
+                            <input name = "email" class="caixa-login" type="email" />
                         </div>
 
                         <div class="caixas-entrada">
@@ -85,7 +91,7 @@
                         </div>
 
                         <div>
-                            <input type="submit" name="submit" id="botao-envia"></input>
+                            <button type="submit" name="submit" id="botao-envia">Entrar</button>
                         </div>
 
                     </div>
